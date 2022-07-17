@@ -1,0 +1,16 @@
+{
+  "name": "background-generator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server & tsc"
+  },
+  "author": "ewsgit",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "lite-server": "^2.6.1",
+    "tsc": "^2.0.4",
+    "typescript": "^4.7.4"
+  }
+}

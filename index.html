@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Background Generator</title>
+    <script defer src="generate.js"></script>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        svg {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        button {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+        }
+
+        input {
+            left: 0;
+            bottom: 0;
+            position: fixed;
+        }
+    </style>
+</head>
+<body>
+<!-- git.svg ["#df3c9f","#9847fa","#2273ee"] -->
+<div id="blobsvg">
+    <svg height="1080" width="1920" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <radialGradient id="gradient" spreadMethod="pad"></radialGradient>
+        </defs>
+        <rect fill="url(#gradient)" height="1080" width="1920"/>
+    </svg>
+</div>
+<input id="input_colors" type="text">
+<button id="refresh">Refresh</button>
+</body>
+</html>
